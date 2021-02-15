@@ -7,6 +7,11 @@
 .navbar{
    background-color: white; 
 }
+.dali{
+
+    display: flex;
+    justify-content: space-between; 
+}
 .nav-link{
     color:black ;
     font-size: 1rem;
