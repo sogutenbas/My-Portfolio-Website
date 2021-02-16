@@ -7,11 +7,6 @@
 .navbar{
    background-color: white; 
 }
-.dali{
-
-    display: flex;
-    justify-content: space-between; 
-}
 .nav-link{
     color:black ;
     font-size: 1rem;
@@ -33,9 +28,15 @@
 }
 /* Main section */
 .main{
+    background:url(./serhat.jpg) no-repeat;
     background-size: cover;
     width: 100%;
-    height: 95vh;
+    height: 100vh;
+
+}
+.row{
+    position: relative;
+    top:9vh;
 }
 .main h3{
     font-size:4.4rem;
@@ -45,14 +46,14 @@
     font-size: 1.4rem;
     text-transform: uppercase;
     line-height: 1;
-    border-bottom: 3px solid rgb(22, 19, 21);
+    border-bottom: 3px solid rgb(233, 156, 14);
     width: 45%;
 }
 /* Main button */
 .main .bt1{
     height: 55px;
     width: 138px;
-    background-color: rgb(22, 19, 21);
+    background-color: rgb(233, 156, 14);
     color:white;
     outline: none;
     border:none;
@@ -60,21 +61,146 @@
     border-radius: 5px;
 }
 .main .bt1:hover{
-    background-color: rgb(43, 38, 41);
+    background-color: rgb(255, 180, 41);
     transition: 0.5s;
 }
 .main .bt2{
     height: 55px;
     width: 138px;
     background-color:transparent;
-    color:rgb(22, 19, 21);
+    color:rgb(233, 156, 14);
     outline: none;
-    border:1px solid rgb(22, 19, 21);
+    border:1px solid rgb(233, 156, 14);
     font-weight: bold;
     border-radius: 5px;
 }
 .main .bt2:hover{
-    background-color: rgb(22, 19, 21);
+    background-color: rgb(233, 156, 14);
     transition: 0.5s;
     color: white;
+}
+/* About Me */
+h1{
+    font-size: 3rem;
+    font-weight: 900;
+}
+.progress{
+    background-color: rgb(233, 219, 219);
+    justify-content: flex-start;
+    border-radius: 50px;
+    align-items: center;
+    position: relative;
+    display: flex;
+    height: 25px;
+    width: 100%;
+    -webkit-box-shadow: inset 23px 40px 97px -159px  rgba(0,0,0,0.75); -moz-box-shadow: inset 23px 40px 97px -159px rgba(0,0,0,0.75); box-shadow: inset 23px 40px 97px -159px rgba(0, 0,0,0.75);
+}
+.pro-value1{
+    animation:load1 3s normal forwards;
+    border-radius: 50px;
+    background-color: black;
+    height: 26px;
+    width: 0;
+}
+.progress p{
+    color: white;
+    padding: 5px;
+}
+.pro-value2{
+    animation:load2 3s normal forwards;
+    border-radius: 50px;
+    background-color: black;
+    height: 26px;
+    width: 0;
+}
+.pro-value3{
+    animation:load3 3s normal forwards;
+    border-radius: 50px;
+    background-color: black;
+    height: 26px;
+    width: 0;
+}
+.pro-value4{
+    animation:load4 3s normal forwards;
+    border-radius: 50px;
+    background-color: black;
+    height: 26px;
+    width: 0;
+}
+.pro-value5{
+    animation:load5 3s normal forwards;
+    border-radius: 50px;
+    background-color: black;
+    height: 26px;
+    width: 0;
+}
+@keyframes load1{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 95%;
+    }
+}
+@keyframes load2{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 90%;
+    }
+}
+@keyframes load3{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 90%;
+    }
+}
+@keyframes load4{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 80%;
+    }
+}
+@keyframes load5{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 30%;
+    }
+}
+.btn1{
+    height: 40px;
+    width: 145px;
+    outline: none;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+}
+.btn1:hover{
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+    transition: 0.5s;
+}
+.btn2{
+    height: 40px;
+    width: 145px;
+    outline: none;
+    border: 1px solid black;
+    background-color:transparent;
+    color: black;
+    border-radius: 4px;
+}
+.btn2:hover{
+    background-color:black;
+    color: white;
+    border: none;
+    transition: 0.5s;
 }
